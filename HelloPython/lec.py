@@ -176,10 +176,3 @@ def f(x):
     return x**2
 
 
-def f(x):                   print(f(1))         # Целое
-     if x == 1:             print(f(2.3))       # 23
-         return 'Целое'     print(f(28))        # None
-    elif x == 2.3:
-        return 23
-     else:
-        return
