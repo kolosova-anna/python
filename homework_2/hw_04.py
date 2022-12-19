@@ -19,4 +19,4 @@ if 0 < i <= (n*2 +1) and 0 < j <= (n*2 + 1):
     product = num_list[i-1] * num_list[j-1]
     print(product)
 else:
-    print('There is no position')
+    print('There are no values for these indexes!')
