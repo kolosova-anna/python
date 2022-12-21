@@ -172,7 +172,31 @@ s = 'hello world'
 # colors.remove('red') #del colors[0] # удалить элемент
 
 
-def f(x):
-    return x**2
+# def f(x):
+#     return x**2
 
+
+# Лекция 2
+
+# colors = ['red', 'green', 'blue']
+# data = open('file.txt', 'a')
+# # data.writelines(colors)  #разделителей не будет
+# data.write('LINE 121\n')
+# data.write('LINE 131\n')
+# data.close()
+# exit()
+
+# with open('file.txt', 'w') as data:
+#     data.write('line 1111\n')
+#     data.write('line 2222\n')
+
+# path = 'file.txt'
+# data = open(path, 'r')
+# for line in data:
+#     print(line)
+# data.close()
+
+import hello as h
+
+print(h.f(1))
 
