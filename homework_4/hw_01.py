@@ -9,5 +9,5 @@ from decimal import *
 
 num = Decimal(input('Enter a real number: '))
 accuracy = Decimal(input('Enter the required accuracy: '))
-new_num = Decimal(num).quantize(Decimal(accuracy), rounding = ROUND_DOWN)
+new_num = Decimal(num).quantize(Decimal(accuracy), rounding = ROUND_HALF_EVEN)
 print (new_num)
