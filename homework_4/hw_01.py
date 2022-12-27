@@ -8,6 +8,10 @@
 from decimal import *
 
 num = Decimal(input('Enter a real number: '))
-accuracy = Decimal(input('Enter the required accuracy: '))
-new_num = Decimal(num).quantize(Decimal(accuracy), rounding = ROUND_HALF_EVEN)
-print (new_num)
+def decimal_number(n):
+    accuracy = Decimal(input('Enter the required accuracy: '))
+    new_num = Decimal(num).quantize(Decimal(accuracy), rounding = ROUND_HALF_EVEN)
+    return new_num
+
+dec_num = decimal_number (num)
+print (dec_num)
