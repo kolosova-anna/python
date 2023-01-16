@@ -9,9 +9,13 @@
 from random import sample
 
 count = int(input('Введите количество слов:'))
-word = 'abc'
-words_list = ["".join(sample (word, k= 3)) for i in range (count)]
-print (*words_list, sep=" ")
+if count >= 1:
+    word = 'abc'
+    words_list = ["".join(sample (word, k= 3)) for i in range (count)]
+    print (*words_list, sep=" ")
+    
+    res = list(filter(lambda i: i != 'abc', words_list))
+    print(*res, sep=" ")
+else:
+    print("Введено некорректное значение")
 
-res = list(filter(lambda i: i != 'abc', words_list))
-print(*res, sep=" ")
