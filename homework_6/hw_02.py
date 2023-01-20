@@ -8,7 +8,7 @@ n = int(input('Введите число > 20:'))
 def list_20_21 (num):
     new_list = []
     if n > 20:
-        new_list = [i for i in range (20, n) if (i % 20 == 0 or i % 21 == 0)]
+        new_list = [i for i in range (20, n + 1) if (i % 20 == 0 or i % 21 == 0)]
     else:
         print ('Введено значение < 20')
     return new_list
