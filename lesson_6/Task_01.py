@@ -51,3 +51,70 @@ def cut(ls):
 
 user_ls = input("...").split()
 print(calculator(cut(user_ls)))
+
+
+
+
+
+# Проверка комплексных чисел:
+# 1. Нельзя использовать //, %
+# 2. Нельзя пользоваться функцией sqrt
+
+# n = input('Enter 1 real part: ')
+# m = input('Enter 1 imaginary number: ')
+
+# n1 = input('Enter 2 real part: ')
+# m1 = input('Enter 2 imaginary number: ')
+
+
+# complex(n, m)
+# complex (n1, m1)
+
+# Проверка ввода комплексного числа
+# При вводе каждой части комплексных чисел делаем проверку
+
+# def check_complex_part1 (a = input('Enter real part: ')):
+#         if a.isdigit():
+#             return int(a)
+#         else:
+#             print ('Error')
+#             a = input('Enter once again: ')
+
+# def check_complex_part2 (b = input('Enter imaginary number: ')):
+#         if b.isdigit():
+#             return int(b)
+#         else:
+#             print ('Error')
+#             b = input('Enter once again: ')
+
+# num = complex (n(check_complex_part1(n), m(check_complex_part2(m))))
+# num = complex (n, m)
+# print (num)
+
+
+
+def check_complex1():
+    n = input('Enter real part: ')
+    if n.isdigit():
+        n = int(n)
+        return n
+    else:
+        print ('Error')
+        n = check_complex1()
+
+
+def check_complex2():
+    m = input('Enter imaginary number: ')
+    if m.isdigit():
+        m = int(m)
+        return m
+    else:
+        print ('Error')
+        m = check_complex2()
+
+# n = input('Enter real part: ')
+a = check_complex1()
+# m = input('Enter imaginary number: ')
+b = check_complex2()
+num = complex (a, b)
+print (num)
